@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url(./assets/coolveticarg.otf);
+}
+body {
+    display: flex;
+}
+ul {
+    list-style-type: none;
+    font-family: Coolvetica;
+    color: #d2a04e;
+    letter-spacing: 1px;
+    font-size: 40px;   
+    display: flex;
+    gap: 35px;
+    margin: 30px;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+li {
+    border-bottom: 3px solid #d2a04e;
+    padding: 5px;
+    margin: 2px;
+    height: 45px;
+}
+a.header-container {
+    text-decoration: none;
+}
+.header-container {
+    height: 500px;
+    width: 100%;
+    background-color: #18130e;
+    display: flex;
+    justify-content: space-between;
+}
+.flexlist {
+    display: flex;
+}
+.logo {
+    margin-left: 70px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 420px;
+    height: 106px;
+}
