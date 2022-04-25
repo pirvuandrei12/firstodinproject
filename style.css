@@ -2,6 +2,10 @@
     font-family: Coolvetica;
     src: url(./assets/coolveticarg.otf);
 }
+@font-face {
+    font-family: SecularOne;
+    src: url(./assets/secularone.ttf);
+}
 body {
     display: flex;
     color: #d2a04e;
@@ -47,12 +51,13 @@ li {
     align-items: center;
     height: 400px;
 }
-h1{
+h1 {
     margin: 0;
     padding: 0;
     letter-spacing: 2px;
+    font-family: SecularOne;
 }
-h3{
+h3 {
     margin: 3px;
     padding: 7px;
     margin-top: 20px;
