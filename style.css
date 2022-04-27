@@ -11,8 +11,6 @@
     src: url(./assets/bullpen3d.ttf);
 }
 h1.logotext {
-    margin: 0;
-    padding: 0;
     font-size: 70px;
     font-family: Bullpen3D;
 }
@@ -35,43 +33,45 @@ body {
 }
 .content {
     display: flex;
-    border-left: 3px solid #e8dcb8;
-    border-right: 3px solid #e8dcb8;
-    padding: 15px;
     gap: 50px;
     justify-content: center;
+    border-left: 3px solid #e8dcb8;
+    border-right: 3px solid #e8dcb8;
     border-radius: 20px;
+    padding: 15px;
 }
 .h3flex {
     display: flex;
-    justify-content: space-around;
     text-align: center;
     gap: 10px;    
     width: 70%;
+
 }
 .h3restu{
     flex-grow: 1;
+    flex-shrink: 0;
+    flex-flow: row wrap;
 }
 .doubleborderdiv{
     padding: 5px;
     border-left: 3px solid #e8dcb8;
     border-right: 3px solid #e8dcb8;
+    border-radius: 20px;
     width: 80%;
     margin: auto;
-    border-radius: 20px;
 }
 ul {
     list-style-type: none;
     font-family: Coolvetica;
     letter-spacing: 1px;
     font-size: 40px;   
+    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
     gap: 25px;
-    padding: 0;
-    margin: 0;
 }
-li{
+li {
     border-bottom: 3px solid #e8dcb8;
 }
 h1 {
@@ -82,14 +82,12 @@ h1 {
 }
 h3 {
     margin: 20px 3px 3px 3px;
-    padding: 3px 7px 3px 7px;
+    padding: 0px 7px 0px 7px;
     border: 3px dotted #e8dcb8;
     background-color: #e8dcb8;
     color: black;
     border-radius: 20px;  
-    display: inline-block;
-    letter-spacing: 2px;
-    font-weight: inherit;
+    font-size: 30px;
     font-family: bullpen3d;
 }
 p {
@@ -101,7 +99,6 @@ p {
 }
 .imagecontent {
     min-width: 0;
-    flex: 1;
 }
 .textcontent {
     flex: 1;
@@ -110,7 +107,6 @@ p {
     width: 100%;
     height: auto;
 }
-
 @media only screen and (max-width: 1400px){
     .content {
         flex-direction: column;
@@ -122,22 +118,15 @@ p {
         width: 60%;
     }
     .h3flex {
-        display: flex;
         justify-content: center;
+        width: 80%;
+        margin: auto;
     }
     .firstcontainer {
         height: 950px;
     }
-    .oldcar {
-        width: auto;
-    }
     h1.logotext {
         font-size: 65px;
-    }
-}
-@media only screen and (min-width: 1200px){
-    h3 {
-        font-size: 30px;
     }
 }
 @media only screen and (max-width: 1250px){
@@ -156,7 +145,6 @@ p {
     }
     .oldcar {
         max-width: 100%;
-        width: auto;
     }
     
 }
@@ -177,18 +165,11 @@ p {
         align-items: center;
         margin-bottom: 20px;
     }
-    .oldcar {
-        width: auto;
-    }
     h1.logotext {
         font-size: 60px;
     }
 }
 @media only screen and (max-width: 800px){
-    .oldcar {
-        max-width: 100%;
-        width: auto;
-    }
     .doubleborderdiv{
         width: 90%;
     }
@@ -199,10 +180,6 @@ p {
 @media only screen and (max-width: 600px){
     .firstcontainer {
         height: 900px;
-    }
-    li {
-        margin: 0;
-        padding: 0;
     }
     ul {
         flex-flow: row wrap;
