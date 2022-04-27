@@ -38,13 +38,19 @@ body {
     border-left: 3px solid #e8dcb8;
     border-right: 3px solid #e8dcb8;
     padding: 15px;
-    gap: 15px;
+    gap: 50px;
     justify-content: center;
     border-radius: 20px;
 }
 .h3flex {
     display: flex;
-    gap: 10px;   
+    justify-content: space-around;
+    text-align: center;
+    gap: 10px;    
+    width: 70%;
+}
+.h3restu{
+    flex-grow: 1;
 }
 .doubleborderdiv{
     padding: 5px;
@@ -78,11 +84,13 @@ h3 {
     margin: 20px 3px 3px 3px;
     padding: 3px 7px 3px 7px;
     border: 3px dotted #e8dcb8;
+    background-color: #e8dcb8;
+    color: black;
     border-radius: 20px;  
     display: inline-block;
     letter-spacing: 2px;
     font-weight: inherit;
-    font-family: Coolvetica;
+    font-family: bullpen3d;
 }
 p {
     margin: 0;
@@ -106,10 +114,9 @@ p {
 @media only screen and (max-width: 1400px){
     .content {
         flex-direction: column;
-    }
-    .content {
         align-items: center;
         text-align: center;
+        gap: 25px;
     }
     .doubleborderdiv{
         width: 60%;
@@ -130,7 +137,7 @@ p {
 }
 @media only screen and (min-width: 1200px){
     h3 {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 @media only screen and (max-width: 1250px){
